@@ -1,0 +1,12 @@
+:root{ 
+  --back: #243F47;
+  --text:  #75C296;
+  --p: #e0eae4;
+}
+body {
+  background-color: var(--back);
+  color: var(--p)
+}
+h1, h2, p {
+  color: var(--text)
+}
