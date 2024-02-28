@@ -1,6 +1,7 @@
 <html>
   <head>
     <title>Clone Website</title>
+    <link rel="stylesheet" href="./clone.css">
   </head>
   <body>
     <head>
@@ -10,65 +11,91 @@
     </head>
     <main>
       <section>
-        <h1 class="card-header">Flexbow Row</h1>
-        <link rel="stylesheet" href="./clone.css">
-        <div class="card-body">
-          <p>Use these three properties to create a Flexbox row layout.</p>
+        <div class="card-column">
+          <figure class="card code-card">
+            <h1 class="card-header">Flexbow Row</h1>
+            <div class="card-body">
+              <p>Use these three properties to create a Flexbox row layout.</p>
+            </div>
+            <code>.row {
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+            }
+            </code>
+          </figure>
         </div>
-        <code>.row {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-        }</code>
-        <h2 class="card-header">Flexbox Column</h2>
-        <div class="card-body">
-          <p>Use this to create a Flexbox column layout.</p>
+        <div class="card-column">
+          <figure class="card code-card">
+            <h2 class="card-header">Flexbox Column</h2>
+            <div class="card-body">
+              <p>Use this to create a Flexbox column layout.</p>
+            </div>
+            <code>.column {
+              display: flex;
+              flex-direction: column
+            }
+            </code>
+          </figure>
         </div>
-        <code>.column {
-          display: flex;
-          flex-direction: column
-        }</code>
-        <h2 class="card-header">CSS Grid Layout</h2>
-        <div class="card-body">
-          <p>Use position properties and negative margins to rise elements higher than their natural starting point.</p>
+        <div class="card-column">
+          <figure class="card code-card">
+            <h2 class="card-header">CSS Grid Layout</h2>
+            <div class="card-body">
+              <p>Use position properties and negative margins to rise elements higher than their natural starting point.</p>
+            </div>
+            <code>.card-header {
+             position: relative;
+             margin-top: -20px;
+            }
+            </code>
+          </figure>
         </div>
-        <code>.card-header {
-          position: relative;
-          margin-top: -20px;
-        }
-        </code>
-        <h2 class="card-header">Linear Gradients</h2>
-        <div class="card-body">
-          <p>This will create a background linear gradient from top to bottom.</p>
+        <div class="card-column">
+          <figure class="card code-card">
+            <h2 class="card-header">Linear Gradients</h2>
+            <div class="card-body">
+              <p>This will create a background linear gradient from top to bottom.</p>
+            </div>
+            <code>.linear-gradient-background {
+              background-image: linear-gradient(
+              rgba(232, 102, 236, 0.3) 0%,
+              rgba(232, 102, 236, 0.6) 100%
+            );}
+            </code>
+          </figure>
         </div>
-        <code>.linear-gradient-background {
-          background-image: linear-gradient(
-            rgba(232, 102, 236, 0.3) 0%,
-            rgba(232, 102, 236, 0.6) 100%
-          );}
-        </code>
-        <h2 class="card-header">Box Transition Glow</h2>
-        <div class="card-body">
-          <p>Use transition and box shadows to glow on hover.</p>
-        </div>
-        <code>.code-card .card-header {
-          border-radius: 8px;
-          transition: all 0.5s ease-in-out;
-        }
+        <div class="card-column">
+          <figure class="card code-card">
+            <h2 class="card-header">Box Transition Glow</h2>
+            <div class="card-body">
+              <p>Use transition and box shadows to glow on hover.</p>
+            </div>
+            <code>.code-card .card-header {
+            border-radius: 8px;
+            transition: all 0.5s ease-in-out;
+            }
         
-        .code-card:hover,
-        .code-card:hover .card-header {
-          box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
-        }</code>
-        <h2 class="card-header">Overlay Card with Title</h2>
-        <div class="card-body">
-          <p>Use position properties and negative margins to raise elements higher than their natural starting point.
-          </p>
+            .code-card:hover,
+            .code-card:hover .card-header {
+            box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+            }
+            </code>
+          </figure>
         </div>
-        <code>.card-header {
-          position: relative;
-          margin-top: -20px;
-        }</code>
+        <div class="card-column">
+          <figure class="card code-card">
+            <h2 class="card-header">Overlay Card with Title</h2>
+            <div class="card-body">
+              <p>Use position properties and negative margins to raise elements higher than their natural starting point.</p>
+            </div>
+            <code>.card-header {
+            position: relative;
+            margin-top: -20px;
+            }
+            </code>
+          </figure>
+        </div>
       </section>
     </main>
     <footer></footer>
